@@ -2,9 +2,9 @@
 
 This project demonstrates how [Muzzley](http://www.muzzley.com) can be used to transport [AllJoyn Notifications](https://www.alljoyn.org/about/core-services/notification) ([interface spec](https://allseenalliance.org/docs-and-downloads/documentation/alljoyn-notification-service-framework-interface-specification)) to the Internet.
 
-AllJoyn Notifications are usally only transported through local networks such as WiFi or Bluetooth. By integrating Muzzley into an an Android application that is capable of receiving local AllJoyn Notifications, we transport them through the Muzzley cloud to any other place in the world (where there's Internet access, of course).
+AllJoyn Notifications are usually only transported through local networks such as WiFi or Bluetooth. By integrating Muzzley into an an Android application that is capable of receiving local AllJoyn Notifications, we transport them through the Muzzley cloud to any other place in the world (where there's Internet access, of course).
 
-## Muzzley/AllJoyn Notification Gateway
+## Muzzley / AllJoyn Notification Gateway
 
 The first component of the integration consists of an Android application that acts as an AllJoyn Notification receiver and, at the same time, as a Muzzley-enabled application capable of emitting data to paired devices through the Internet.
 
@@ -30,7 +30,7 @@ It shows how you can easily create an Android-powered AllJoyn gateway and, throu
 
 On the left side, the received AllJoyn Notifications are shown. On the right side, we can see the Muzzley connection information that allows us to pair our smartphone using the Muzzley app for [Android](https://play.google.com/store/apps/details?id=com.muzzley) or [iPhone](https://itunes.apple.com/us/app/muzzley/id604133373).
 
-The application connects to Muzzley by integrating the [Muzzley Java Lib](http://www.muzzley.com/documentation/libraries/java.html).
+The application connects to Muzzley by integrating the [Muzzley Java Lib](http://www.muzzley.com/documentation/libraries/java.html). The code where we connect to Muzzley and forward the AllJoyn Notifications, is in the file [com / muzzley / alljoynintegration / MuzzleyManager.java](https://github.com/muzzley/muzzley-alljoyn-integration-demo/blob/master/android-app/MuzzleyAllJoynIntegrationSample/app/src/main/java/com/muzzley/alljoynintegration/MuzzleyManager.java).
 
 
 ## The Muzzley WebView
