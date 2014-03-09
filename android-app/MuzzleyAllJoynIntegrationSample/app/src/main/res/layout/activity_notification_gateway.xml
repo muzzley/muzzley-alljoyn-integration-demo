@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <!-- Red Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/muzzley_red"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_home"
+            android:layout_marginRight="8dp"
+            android:contentDescription="Home Logo"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/icon_home"
+            android:gravity="center_vertical"
+            android:text="Home Notification Gateway"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/logo_powered_by_muzzley"
+            android:text="powered by"
+            android:textColor="@android:color/white"
+            android:gravity="left|center_vertical"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/logo_powered_by_muzzley"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_muzzley"
+            android:contentDescription="Muzzley Logo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!-- Main Content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#f9f9f9">
+
+        <!-- Incoming AllJoyn Notifications -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/muzzley_information_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/latest_notifications_border"
+                android:text="Latest Notifications"
+                android:textColor="@color/notification_text_gray"
+                android:paddingLeft="16dp"
+                android:gravity="left|center_vertical" />
+
+            <ListView
+                android:id="@+id/alljoyn_notifications_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:divider="@null" >
+
+            </ListView>
+        </LinearLayout>
+
+        <!-- Muzzley Scan Info Column -->
+        <LinearLayout
+            android:id="@+id/muzzley_information_layout"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:paddingTop="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="0dp"
+            android:background="@drawable/activity_info_layout_border"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Scan to interact"
+                android:textColor="@color/notification_text_gray"
+                android:gravity="left|center_vertical" />
+
+            <ImageView
+                android:id="@+id/qr_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_info_items_border"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/activity_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/muzzley_red"
+                android:background="@drawable/activity_info_items_border"
+                android:text="Loading..."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

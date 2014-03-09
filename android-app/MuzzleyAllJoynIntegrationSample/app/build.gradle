@@ -1,0 +1,31 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "19.0.1"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:support-v4:+'
+    compile files('libs/NSNativePlatformAndr.jar')
+    compile files('libs/muzzley-lib-0.1.0.jar')
+    compile files('libs/NotificationService.jar')
+    compile files('libs/alljoyn.jar')
+    compile files('libs/alljoyn_apps_android_utils.jar')
+    compile files('libs/alljoyn_about.jar')
+    compile files('libs/NSCommons.jar')
+    compile files('libs/java_websocket.jar')
+}

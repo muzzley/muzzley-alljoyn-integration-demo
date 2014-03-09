@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/alljoyn_notification_time_ago"
+        android:background="@drawable/notification_item_border">
+
+        <ImageView
+            android:id="@+id/alljoyn_notification_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:src="@null" />
+
+		<TextView
+	        android:id="@+id/alljoyn_notification_device_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:padding="8dp"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/muzzley_red"
+	        android:layout_toRightOf="@+id/alljoyn_notification_icon"
+	        android:text="" />
+		
+	    <TextView
+	        android:id="@+id/alljoyn_notification_num_broadcasts"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:padding="8dp"
+	        android:gravity="center"
+	        android:layout_below="@+id/alljoyn_notification_icon"
+	        
+	        android:text="" />
+        
+        <TextView
+	        android:id="@+id/alljoyn_notification_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:padding="8dp"
+	        android:gravity="center_vertical"
+	        android:layout_below="@+id/alljoyn_notification_device_name"
+	        android:layout_alignLeft="@+id/alljoyn_notification_device_name"
+	        android:text="" />
+        
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+{
+  "name": "muzzley-alljoyn-integration-demo",
+  "version": "0.1.0",
+  "description": "This project is just a way to simulate emitting AllJoyn notifications and be able to see a demo of the Muzzley interface that shows these notifications.",
+  "main": "test_webview_alljoyn_notifications.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "muzzley-client": "~0.3.5"
+  }
+}

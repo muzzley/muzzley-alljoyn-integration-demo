@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: alljoyn_apps_android_utils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/alljoyn_apps_android_utils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
