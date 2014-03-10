@@ -4,6 +4,8 @@ This project demonstrates how [Muzzley](http://www.muzzley.com) can be used to t
 
 AllJoyn Notifications are usually only transported through local networks such as WiFi or Bluetooth. By integrating Muzzley into an an Android application that is capable of receiving local AllJoyn Notifications, we transport them through the Muzzley cloud to any other place in the world (where there's Internet access, of course).
 
+This is a proof of concept that shows how Muzzley can be used for bi-directional real-time communication.
+
 ## Muzzley / AllJoyn Notification Gateway
 
 The first component of the integration consists of an Android application that acts as an AllJoyn Notification receiver and, at the same time, as a Muzzley-enabled application capable of emitting data to paired devices through the Internet.
@@ -35,7 +37,7 @@ The application connects to Muzzley by integrating the [Muzzley Java Lib](http:/
 
 ## The Muzzley WebView
 
-The second component of this demo is a [Muzzley WebView widget](http://www.muzzley.com/documentation/widgets/webview.html) that list the AllJoyn Notifications that were forwarded by the Android app (described above) through the Muzzley cloud.
+The second component of this demo is a [Muzzley WebView widget](http://www.muzzley.com/documentation/widgets/webview.html) that list the AllJoyn Notifications that were forwarded by the Android app (described above) through the Muzzley cloud. It also has a "Settings" screen where the user can enable or disable receiving notifications from specific AllJoyn applications. These settings get sent back to the AllJoyn-enabled application. This shows how we achieve bi-directional real-time communication.
 
 ![](https://raw.github.com/muzzley/muzzley-alljoyn-integration-demo/master/docs/imgs/MuzzleyNotificationWebview.png)
 
