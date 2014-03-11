@@ -14,11 +14,11 @@ The Android app is in the `android-app/` folder.
 
 ### AllJoyn Notification Demo
 
-This demo builds on top of the AllJoyn Notication UI demo developed by the AllJoyn team. The base demo can be downloaded at the [AllJoyn SDK Downloads Page](https://www.alljoyn.org/docs-and-downloads) and is included in the `AllJoyn Notification Service Framework SDK - 1.0.1` zip.
+This demo builds on top of the AllJoyn Notication UI demo. The base demo can be downloaded at the [AllJoyn SDK Downloads Page](https://www.alljoyn.org/docs-and-downloads) and is included in the `AllJoyn Notification Service Framework SDK - 1.0.1` zip.
 
-The app is capable of acting as an AllJoyn Notification producer and consumer at the same time. That is, you can emit notifications and receive them in the same Android device.
+The app is capable of acting as a notification producer and consumer at the same time. That is, you can emit notifications and receive them in the same Android device.
 
-We have changed the original AllJoyn screen to add a button (the Muzzley logo on the top right) that takes the user back to the "Muzzley Notification Gateway" view.
+We have changed the original screen to add a button (the Muzzley logo on the top right) that takes the user back to the "Muzzley Notification Gateway" view.
 
 ![](https://raw.github.com/muzzley/muzzley-alljoyn-integration-demo/master/docs/imgs/AllJoynNotificationUI.png)
 
@@ -26,18 +26,18 @@ We have changed the original AllJoyn screen to add a button (the Muzzley logo on
 
 The main view of this sample app is what we like to call the "Home Notification Gatway". It's the main view of the app described in the previous section.
 
-It shows how you can easily create an Android-powered AllJoyn gateway and, through the Muzzley integration, have a simple method of taking your AllJoyn notifications with you when you leave the house.
+It shows how you can easily create an Android-powered AllJoyn Notifications gateway and, through the Muzzley integration, have a simple method of taking your notifications with you when you leave the house.
 
 ![](https://raw.github.com/muzzley/muzzley-alljoyn-integration-demo/master/docs/imgs/MuzzleyAllJoynHomeNotificationGateway.png)
 
-On the left side, the received AllJoyn Notifications are shown. On the right side, we can see the Muzzley connection information that allows us to pair our smartphone using the Muzzley app for [Android](https://play.google.com/store/apps/details?id=com.muzzley) or [iPhone](https://itunes.apple.com/us/app/muzzley/id604133373).
+On the left side, the received notifications are shown. On the right side, we can see the Muzzley connection information that allows us to pair our smartphone using the Muzzley app for [Android](https://play.google.com/store/apps/details?id=com.muzzley) or [iPhone](https://itunes.apple.com/us/app/muzzley/id604133373).
 
 The application connects to Muzzley by integrating the [Muzzley Java Lib](http://www.muzzley.com/documentation/libraries/java.html). The code where we connect to Muzzley and forward the AllJoyn Notifications, is in the file [com / muzzley / alljoynintegration / MuzzleyManager.java](https://github.com/muzzley/muzzley-alljoyn-integration-demo/blob/master/android-app/MuzzleyAllJoynIntegrationSample/app/src/main/java/com/muzzley/alljoynintegration/MuzzleyManager.java).
 
 
 ## The Muzzley WebView
 
-The second component of this demo is a [Muzzley WebView widget](http://www.muzzley.com/documentation/widgets/webview.html) that list the AllJoyn Notifications that were forwarded by the Android app (described above) through the Muzzley cloud. It also has a "Settings" screen where the user can enable or disable receiving notifications from specific AllJoyn applications. These settings get sent back to the AllJoyn-enabled application. This shows how we achieve bi-directional real-time communication.
+The second component of this demo is a [Muzzley WebView widget](http://www.muzzley.com/documentation/widgets/webview.html) that lists the notifications that were forwarded by the Android app (described above) through the Muzzley cloud. It also has a "Settings" screen where the user can enable or disable receiving notifications from specific AllJoyn applications. These settings get sent back to the AllJoyn-enabled application. This shows how we achieve bi-directional real-time communication.
 
 ![](https://raw.github.com/muzzley/muzzley-alljoyn-integration-demo/master/docs/imgs/MuzzleyNotificationWebview.png)
 
