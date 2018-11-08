@@ -2,7 +2,7 @@
 
 This project demonstrates how [Muzzley](http://www.muzzley.com) can be used to transport [AllJoyn Notifications](https://www.alljoyn.org/about/core-services/notification) ([interface spec](https://allseenalliance.org/docs-and-downloads/documentation/alljoyn-notification-service-framework-interface-specification)) to the Internet.
 
-AllJoyn Notifications are usually only transported through local networks such as WiFi or Bluetooth. By integrating Muzzley into an an Android application that is capable of receiving local AllJoyn Notifications, we transport them through the Muzzley cloud to any other place in the world (where there's Internet access, of course).
+AllJoyn Notifications are usually only transported through local networks such as WiFi or Bluetooth. By integrating Muzzley into an Android application that is capable of receiving local AllJoyn Notifications, we transport them through the Muzzley cloud to any other place in the world (where there's Internet access, of course).
 
 This is a proof of concept that shows how Muzzley can be used for bi-directional real-time communication.
 
